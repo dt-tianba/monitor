@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="monitor_xo:war">
+    <output-path>$PROJECT_DIR$/monitor_xo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>monitor_xo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mogu_xo.war">
+      <element id="artifact" artifact-name="monitor_xo:war exploded" />
+    </root>
+  </artifact>
+</component>

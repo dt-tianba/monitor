@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FullLinkMonitoring.iml" filepath="$PROJECT_DIR$/FullLinkMonitoring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor_base/monitor_base.iml" filepath="$PROJECT_DIR$/monitor_base/monitor_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor_config/monitor_config.iml" filepath="$PROJECT_DIR$/monitor_config/monitor_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor_utils/monitor_utils.iml" filepath="$PROJECT_DIR$/monitor_utils/monitor_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor_web/monitor_web.iml" filepath="$PROJECT_DIR$/monitor_web/monitor_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/monitor_xo/monitor_xo.iml" filepath="$PROJECT_DIR$/monitor_xo/monitor_xo.iml" />
     </modules>
   </component>
 </project>
