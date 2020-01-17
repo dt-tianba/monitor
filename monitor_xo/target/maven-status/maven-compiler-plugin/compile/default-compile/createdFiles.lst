@@ -1,5 +1,5 @@
-com/monitor/xo/analyze/CpuDataAnalyze.class
-com/monitor/xo/service/impl/PrometheusDataServiceImpl.class
-com/monitor/xo/mapper/PrometheusDataMapper.class
-com/monitor/xo/service/PrometheusDataService.class
-com/monitor/xo/vo/CpuDataVO.class
+com\monitor\xo\service\impl\PrometheusDataServiceImpl.class
+com\monitor\xo\service\PrometheusDataService.class
+com\monitor\xo\analyze\CpuDataAnalyze.class
+com\monitor\xo\mapper\PrometheusDataMapper.class
+com\monitor\xo\vo\CpuDataVO.class
