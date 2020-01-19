@@ -13,17 +13,27 @@ public class CpuDataAnalyze {
 
 
 
-    long addSeconds = 0;//模拟时间增长
+    private  long addSeconds = 0;//模拟时间增长
 
-    long time = 0;//数据实时生成时间
+    private long time = 0;//数据实时生成时间
 
-    long nowTime = 0;//当前时间
+    private long nowTime = 0;//当前时间
 
-    String cpu = "";//获取数据标识
+    private String cpu = "";//获取数据标识
 
-    List<CpuDataVO> cpuDatas = new ArrayList<CpuDataVO>();
+    private List<CpuDataVO> cpuDatas = new ArrayList<CpuDataVO>();
 
-    List<Map<String, Object>> valueList = new ArrayList<Map<String, Object>>();//单个数据情况集合
+    private List<Map<String, Object>> valueList = new ArrayList<Map<String, Object>>();//单个数据情况集合
+
+    /**
+     * 清空数据以便下次调用
+     */
+    public CpuDataAnalyze(){
+        nowTime = Long.valueOf(new Date().getTime());
+        cpuDatas.clear();
+        addSeconds = 0;
+    }
+
     /**
      * 处理json数据
      *
@@ -31,10 +41,6 @@ public class CpuDataAnalyze {
      * @return
      */
     public List<CpuDataVO> handleValue(String jsonStr) {
-
-        nowTime = Long.valueOf(new Date().getTime());
-        cpuDatas.clear();
-        addSeconds = 0;
 
         JSONArray provinceArray;
         if (jsonStr.startsWith("[") && jsonStr.endsWith("]")) {
@@ -68,7 +74,7 @@ public class CpuDataAnalyze {
                     cpuData.setId(cpu);
                     cpuData.setValueList(valueList);
                     cpuDatas.add(cpuData);
-                    valueList = new ArrayList<Map<String, Object>>();
+                    valueList = new ArrayList<>();
                     cpu = "";
                 } else if (strkey1.equals("cpu")) {
                     cpu = strval1.toString();
