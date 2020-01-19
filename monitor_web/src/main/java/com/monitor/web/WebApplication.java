@@ -24,7 +24,7 @@ public class WebApplication {
         SpringApplication.run(WebApplication.class, args);
     }
 
-    /*private CorsConfiguration buildConfig() {
+    private CorsConfiguration buildConfig() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         corsConfiguration.addAllowedOrigin("*");
         corsConfiguration.addAllowedHeader("*");
@@ -32,15 +32,14 @@ public class WebApplication {
         return corsConfiguration;
     }
 
-    *//**
+    /**
      * 跨域过滤器
-     *
      * @return
-     *//*
+     */
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", buildConfig()); // 4
         return new CorsFilter(source);
-    }*/
+    }
 }
