@@ -54,6 +54,8 @@ public class CpuDataAnalyze {
      * @return
      */
     public List<CpuDataVO> forMapInList(List<Map<String, Object>> mapList) {
+
+        List<CpuDataVO> resultCupData = new ArrayList<>();
         for (int i = 0; i < mapList.size(); i++) {
             Map<String, Object> obj = mapList.get(i);
             for (Map.Entry<String, Object> entry : obj.entrySet()) {
