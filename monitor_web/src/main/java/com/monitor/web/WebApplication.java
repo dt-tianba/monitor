@@ -16,8 +16,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @MapperScan("com.monitor.xo.mapper")
 @ComponentScan(basePackages = {
-        "com.monitor.config",
-        "com.monitor.web.config",
         "com.monitor.web.controller",
         "com.monitor.xo.service"})
 public class WebApplication {
@@ -36,7 +34,6 @@ public class WebApplication {
 
     /**
      * 跨域过滤器
-     *
      * @return
      */
     @Bean

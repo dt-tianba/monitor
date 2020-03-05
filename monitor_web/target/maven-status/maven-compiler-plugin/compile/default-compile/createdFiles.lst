@@ -1,2 +1,2 @@
-com/monitor/web/controller/PrometheusDataController.class
-com/monitor/web/WebApplication.class
+com\monitor\web\WebApplication.class
+com\monitor\web\controller\PrometheusDataController.class
